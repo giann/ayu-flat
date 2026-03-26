@@ -1,0 +1,134 @@
+# Author: Benoit Giannangeli
+# Background-first dark variant of Ayu Mirage inspired by flatwhite's highlight strategy
+
+"attribute" = { fg = "blue_text", bg = "blue_bg" }
+"comment" = { fg = "comment_fg", bg = "comment_bg" }
+"comment.line" = { fg = "comment_fg", bg = "comment_bg" }
+"comment.block" = { fg = "comment_fg", bg = "comment_bg" }
+"comment.block.documentation" = { fg = "comment_fg", bg = "comment_bg" }
+"constant" = { fg = "blue_text", bg = "blue_bg" }
+"constructor" = { fg = "base1" }
+"function" = { fg = "orange_text" }
+"keyword" = { fg = "purple_text", bg = "purple_bg" }
+"label" = { fg = "base3" }
+"namespace" = { fg = "teal_text", bg = "teal_bg" }
+"operator" = { fg = "base1" }
+"punctuation.bracket" = { fg = "base3" }
+"special" = { fg = "blue_text", bg = "blue_bg" }
+"string" = { fg = "green_text", bg = "green_bg" }
+"type" = { fg = "blue_text", bg = "blue_bg" }
+"variable" = { fg = "base1" }
+"variable.parameter" = { fg = "blue_text", bg = "blue_bg" }
+
+"diagnostic" = { modifiers = ["underlined"] }
+
+"diagnostic.info" = { underline = { color = "orange_text", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange_text", style = "curl" } }
+"diagnostic.error" = { underline = { color = "diff_delete", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"info" = { fg = "orange_text", bg = "orange_bg" }
+"hint" = { fg = "base3" }
+"warning" = { fg = "orange_text", bg = "orange_bg" }
+"error" = { fg = "diff_delete" }
+
+"markup.heading" = { fg = "purple_text", bg = "purple_bg", modifiers = [
+  "bold",
+] }
+"markup.raw" = { fg = "orange_text", bg = "orange_bg" }
+"markup.raw.inline" = { fg = "orange_text", bg = "orange_bg" }
+"markup.raw.block" = { fg = "orange_text", bg = "orange_bg" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue_text", bg = "blue_bg", modifiers = [
+  "underlined",
+] }
+"markup.link.label" = { fg = "blue_text", bg = "blue_bg" }
+"markup.link.text" = { fg = "blue_text", bg = "blue_bg" }
+"markup.quote" = { fg = "teal_text", bg = "teal_bg" }
+"markup.list" = { fg = "purple_text", bg = "purple_bg" }
+
+"ui.background"= { bg = "background" }
+"ui.cursor" = { fg = "dark_gray", bg = "yellow" }
+"ui.cursor.primary" = { fg = "dark_gray", bg = "orange" }
+"ui.cursor.match" = "orange"
+"ui.linenr" = "dark_gray"
+"ui.linenr.selected" = "gray"
+"ui.statusline" = { fg = "foreground", bg = "black" }
+"ui.statusline.normal" = { fg = "black", bg = "blue" }
+"ui.statusline.insert" = { fg = "black", bg = "orange" }
+"ui.statusline.select" = { fg = "black", bg = "magenta" }
+"ui.cursorline" = { bg = "black" }
+"ui.popup" = { fg = "#7B91b3", bg = "black" }
+"ui.window" = "dark_gray"
+"ui.help" = { fg = "#7B91b3", bg = "black" }
+"ui.text" = "foreground"
+"ui.text.focus" = { bg = "dark_gray", fg = "foreground" }
+"ui.text.info" = "foreground"
+"ui.virtual.whitespace" = "dark_gray"
+"ui.virtual.ruler" = { bg = "black" }
+"ui.virtual.inlay-hint" = { fg = "inlay_fg", bg = "inlay_bg" }
+"ui.virtual.inlay-hint.parameter" = { fg = "inlay_fg", bg = "inlay_bg" }
+"ui.virtual.inlay-hint.type" = { fg = "inlay_fg", bg = "inlay_bg", modifiers = ["italic"] }
+"ui.menu" = { fg = "foreground", bg = "black" }
+"ui.menu.selected" = { bg = "gray", fg = "background" }
+"ui.selection" = { bg = "dark_gray" }
+"ui.bufferline" = { fg = "gray", bg = "background" }
+"ui.bufferline.active" = { fg = "foreground", bg = "dark_gray" }
+"ui.debug" = { fg = "orange", bg = "background" }
+"ui.highlight.frameline" = { bg = "#0067a3" }
+"ui.virtual.jump-label" = { fg = "red", modifiers = ["italic", "bold"] }
+
+"diff.plus" = { fg = "diff_add" }
+"diff.delta" = { fg = "diff_change" }
+"diff.minus" = { fg = "diff_delete" }
+
+[palette]
+base1 = "#C6C4BD"
+base2 = "#AFADA5"
+base3 = "#8E95A0"
+base4 = "#565B66"
+base5 = "#323843"
+base6 = "#252B36"
+base7 = "#1F2430"
+accent = "#DFBFFF"
+orange_text = "#FFAD66"
+orange_text_sec = "#FFCC77"
+orange_bg = "#47433D"
+green_text = "#D5FF80"
+green_text_sec = "#E4FFAA"
+green_bg = "#2E3B2D"
+teal_text = "#73D0FF"
+teal_text_sec = "#97DDFF"
+teal_bg = "#273646"
+blue_text = "#73D0FF"
+blue_text_sec = "#9ADFFF"
+blue_bg = "#263240"
+purple_text = "#DFBFFF"
+purple_text_sec = "#EAD6FF"
+purple_bg = "#3A3346"
+diff_add = "#D5FF80"
+diff_change = "#FFCC77"
+diff_change_dark = "#6B5630"
+diff_delete = "#F28779"
+diff_renamed = "#73D0FF"
+white = "#FFFFFF"
+comment_bg = "#3A2228"
+comment_fg = "#F28779"
+inlay_fg = "#FFCC66"
+inlay_bg = "#47433D"
+foreground = "#CCCAC2"
+black = "#1A1F29"
+blue = "#73D0FF"
+orange = "#FFAD66"
+magenta = "#DFBFFF"
+gray = "#565B66"
+dark_gray = "#323843"
+background = "#1F2430"
+dark_background = "#171B24"
+cyan = "#444B55"
+green = "#D5FF80"
+red = "#F28779"
+yellow = "#FFCC77"
